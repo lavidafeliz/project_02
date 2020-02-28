@@ -4,9 +4,11 @@ The server serves as a Key-Value data server which support multi-thread. The cli
 
 ##Instructions to execute
 1. thrift -gen java KeyStoreService.thrift . It would generate code into KeyStoreService.java file 
-2. java -jar Server.jar <port number>  
-3. java -jar Client.jar <ip> <port number>  
+2. run server side  java -jar Server.jar <port number>  
+3. run client side  java -jar Client.jar <ip> <port number>  
   in client console, it would ask user to input operation parameters, keys and values. 
+  (If use IDE to run the code, please create a maven project and import POM.xml 
+  setup thrift environment and add plugin of thrift in IntelliJ) 
   
 For example:   
 1. java -jar Server.jar 8000
